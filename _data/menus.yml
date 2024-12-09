@@ -1,0 +1,27 @@
+main:
+  - name: "ABOUT"
+    url: "/"
+    weight: 1
+  - name: "RESEARCH"
+    url: "/research/"
+    weight: 2
+  - name: "PROJECTS"
+    url: "/projects/"
+    weight: 3
+  - name: "RESUME"
+    url: "/resume/"
+    weight: 4
+  - name: "EXPERIENCE"
+    url: "/experience/"
+    weight: 5
+  - name: "TRAVELOGUE"
+    url: "/travelouge/"
+    weight: 6
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Contact"
+    url: "/contact/"
+    weight: 2

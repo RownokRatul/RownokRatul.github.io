@@ -1,0 +1,40 @@
+.main-menu {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+    background-color: $red-600; // Ensures the entire nav bar has a uniform background
+  }
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; // Adjusts menu items to be centered
+    padding-left: 0; // Removes default padding
+    margin: 0; // Removes default margin
+    list-style: none; // Removes list styling
+    width: 100%; // Ensures the menu uses the full width available
+
+    > li {
+      font-size: 1rem;
+      // Remove margin-right to eliminate gaps between items
+
+      > a {
+        padding: 10px 15px; // Adjust padding as needed
+        display: block; // Ensures the link uses the full list item area
+        text-decoration: none;
+        color: #fff; // Set text color for better contrast against the primary background
+        transition: background-color 0.3s, color 0.3s; // Smooth transition for hover and focus
+
+        &:hover, &:focus {
+          background-color: #fff; // Changes background to white on hover/focus
+          color: $primary; // Changes text color to primary on hover/focus
+        }
+      }
+
+      &.active > a {
+        background-color: #fff; // Active item has a white background
+        color: $primary; // Active item text color changes to primary
+        pointer-events: none; // Disables further interaction with the active link
+      }
+    }
+  }
+}
